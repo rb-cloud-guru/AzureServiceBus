@@ -1,12 +1,12 @@
 #remote_state {
-#    backend = "azurerm"
-#    config = {
-#        resource_group_name = ""
-#        storage_account_name = ""
-#        container_name = ""
-#        key = "as***.tfstate"
-##    }
-#}
+    backend = "azurerm"
+    config = {
+        resource_group_name = ""
+        storage_account_name = ""
+        container_name = ""
+        key = "${path_relative_to_include()}/as***.tfstate"
+    }
+}
 
 inputs = {
     location = "azureregion"
