@@ -1,8 +1,8 @@
 
 #tf
-#terraform {
-#  backend "azurerm" {}
-#}
+terraform {
+  backend "azurerm" {}
+}
 
 #provider
 provider "azurerm" {
